@@ -19,6 +19,10 @@ const colors = {
 	normal: '#F5F5F5'
 }
 
+window.addEventListener('click',()=>{
+    document.getElementById("song").play();
+});
+
 const main_types = Object.keys(colors)
 
 const fetchPokemons = async () => {
@@ -65,6 +69,3 @@ const createPokemonCard = (pokemon) => {
 
 fetchPokemons()
 
-window.addEventListener('click',()=>{
-    document.getElementById("song").play();
-});
